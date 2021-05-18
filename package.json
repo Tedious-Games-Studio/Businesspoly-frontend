@@ -54,6 +54,14 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^6.0.0",
+    "lint-staged": ">=10",
     "prettier": "^2.2.1"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "yarn format",
+      "yarn lint",
+      "git add"
+    ]
   }
 }
